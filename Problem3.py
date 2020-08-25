@@ -2,7 +2,7 @@
 
 What is the largest prime factor of the number 600851475143 ?"""
 
-def largest_prime_factors(n):
+def prime_factors(n):
     """ Gives the largest prime factor for the given number. """
     i = 2
     factors = []

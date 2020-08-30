@@ -8,10 +8,10 @@ import time
 multiples = []
 start_time = time.time()
 
-for i in range(0, 1000):
+for i in range(3, 1000):
 	if (i % 3 == 0) or (i % 5 == 0):
 		multiples.append(i)
 
 print(sum(multiples))
 
-print(f"[Program finished in {time.time() - start_time} seconds.]")
+print(f"[Program finished in {round((time.time() - start_time), 5)} seconds]")

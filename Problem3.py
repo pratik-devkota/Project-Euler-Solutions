@@ -13,7 +13,9 @@ def prime_factors(n):
                 n = n / i
             i += 1
     return factors[-1]
+
 import time
+
 start_time = time.time()
 
 print(prime_factors(600851475143))

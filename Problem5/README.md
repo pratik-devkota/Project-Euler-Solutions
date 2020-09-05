@@ -8,7 +8,9 @@ We can further note that the exponent, say e, is 1 for p > sqrt(20)
 i.e. we only need to evaluate e for p <= sqrt(20).
 
 We can thus derive a formula:
+
 Let's say we have an array of primes p[1], p[2]... p[i] and their respective exponents are e[1], e[2]... e[i].
+
 Then we can write,
 
 p[i]^e[i] = 20

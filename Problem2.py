@@ -32,7 +32,7 @@ for i in range(1, 40):
     else:
         i += 1
 
-print(sum(evens))
+print(f"The required sum of the even-valued terms is {sum(evens)}.")
 
 print(f"[Program finished in {time.time() - start_time} seconds.]")
         

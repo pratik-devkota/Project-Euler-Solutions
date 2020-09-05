@@ -15,5 +15,5 @@ for i in range(100, 1000):
             
 palindromes.sort()
 
-print(palindromes[-1])
-print(f"Program executed in {time.time() - start_time}s.")
+print(f"The largest palindrome made from the product of two 3-digit numbers is {palindromes[-1]}.")
+print(f"Program finished in {time.time() - start_time}s.")

@@ -5,15 +5,20 @@ Find the largest palindrome made from the product of two 3-digit numbers."""
 import time
 
 start_time = time.time()
-palindromes = []
 
-for i in range(100, 1000):
-    for j in range(100, 1000):
-        k = i * j
-        if str(k) == str(k)[::-1]:
-            palindromes.append(k)
-            
-palindromes.sort()
+largest_palindrome = 0
+a = 999
+while a >= 100:
+    # three digit numbers are 100-999 (inclusive)
+    b = 999
+    while b >= a:
+        if a*b <= largest_palindrome:
+            break # since the product is going to be too small anyway
+        if str(a*b) == str(a*b)[::-1]:
+            # some Python magic here for reversing the number
+            largest_palindrome = a*b
+        b -= 1
+    a -= 1
 
-print(f"The largest palindrome made from the product of two 3-digit numbers is {palindromes[-1]}.")
+print(largest_palindrome)
 print(f"Program finished in {time.time() - start_time}s.")
